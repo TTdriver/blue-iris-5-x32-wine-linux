@@ -8,6 +8,8 @@ This is the newer 64-bit experiment. Use it if you want to reproduce BI 6 startu
 
 The user reported that BI 6 disappeared when double-clicking a live camera to enlarge it. The service recorded SIGKILL; the VM remained up. Examined logs did not identify an OOM event or Wine exception explaining that termination. The cause remains under investigation. The original launch had a 1 GiB memory-throttling threshold, a 2.5 GiB hard ceiling and a 128 MiB swap allowance. The diagnostic retry raises the throttling threshold to 2 GiB and the swap allowance to 512 MiB while preserving the hard ceiling. This is a diagnostic change, not a proven fix.
 
+On the retry, the user reported that double-clicking a live camera stayed open. BI 6 remained active at about 1.1–1.2 GiB, and passive cgroup monitoring showed no throttling or OOM events. All ten cameras continued writing fresh clips, and 100 changing frames from each latest clip decoded successfully. This successful retry does not establish the cause of the earlier SIGKILL or long-term reliability.
+
 ## What worked
 
 On October 9, 2026, Blue Iris **6.1.3.10 x64** opened on Zorin OS 18.1 with the host **Wine 10.0**. All ten cameras produced local BVR recordings. Completed clips from the current ten-camera launch each decoded to 100 H.264 frames at 640×360 or 640×480, with ten distinct sampled frames per camera. BI 6 used approximately 1 GB resident memory during this short test. The duplicate BI 5 recorder was then stopped, with its separate prefix and launcher preserved as a fallback.

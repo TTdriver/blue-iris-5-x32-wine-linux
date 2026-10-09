@@ -1,5 +1,7 @@
 # Human setup guide
 
+**BI 6 x64 update:** The [BI 6 experiment](BI6-64BIT.md) has its own human instructions, copy-paste AI prompt, native IPHLPAPI workaround, ten-camera recording results, and current UI stability caveat. The material below documents the earlier BI 5 32-bit setup.
+
 **Use this section if you are doing the work yourself.** It explains the steps and why they matter. If you want an AI assistant to do the work, use [AI-PROMPT.md](AI-PROMPT.md) instead.
 
 This guide reconstructs a working legacy setup. Installation was achieved through several experiments, so the exact route below has not yet been repeated as a clean-room installation. Read [TESTED-SETUP.md](TESTED-SETUP.md) before choosing this over a supported Windows installation.

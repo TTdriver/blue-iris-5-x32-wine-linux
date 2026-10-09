@@ -1,5 +1,7 @@
 # Copy-paste prompt for your own AI assistant
 
+**BI 6 x64 update:** The [BI 6 experiment](BI6-64BIT.md) has its own human instructions, copy-paste AI prompt, native IPHLPAPI workaround, ten-camera recording results, and current UI stability caveat. The material below documents the earlier BI 5 32-bit setup.
+
 **Use this section to ask an AI assistant to perform the setup on your machine.** It is a task brief, not a shell script. Use an assistant with terminal/computer access, or ask it to guide you interactively.
 
 Copy the entire block below. Fill in the environment fields. Keep passwords, registry exports, and camera footage private. If your assistant cannot access your desktop, you may need to dismiss installer or evaluation dialogs yourself.

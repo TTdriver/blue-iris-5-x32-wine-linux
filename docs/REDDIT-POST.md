@@ -16,6 +16,8 @@ The newer working combination is Zorin OS 18.1, Wine 10.0, a dedicated 64-bit pr
 
 In the earlier BI 5 32-bit experiment, switching the stream paths to substreams did not stop a ten-camera startup crash. Imported cameras still had cached full-resolution dimensions, including 3840×2160. Correcting those dimensions before enabling the cameras brought the process back to about 1 GB RAM / 1.9 GB virtual memory during the short test.
 
+One issue to be clear about: BI 6 disappeared during a live-camera enlargement after the first recording test. The VM stayed up, and the process received SIGKILL without an identified cause. A retry with a higher memory-throttling threshold and swap allowance stayed open during enlargement, and all ten cameras kept recording. That is a successful retry, not a proven explanation or fix.
+
 The repo has separate sections for:
 
 - Plain-English human guides for the BI 6 x64 experiment and the earlier BI 5 fallback.

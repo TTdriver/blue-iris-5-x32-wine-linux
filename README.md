@@ -1,6 +1,6 @@
 # Blue Iris on Linux with Wine
 
-**New BI 6 result:** [BI 6.1.3.10 x64 now opens and records under Wine 10.0](docs/BI6-64BIT.md) using a native IPHLPAPI workaround. Completed recordings from all ten low-resolution cameras decoded successfully, but BI 6 then disappeared when a live camera was double-clicked to enlarge it. This UI failure is under investigation; sustained reliability remains untested. That page has separate human instructions and a copy-paste AI prompt.
+**New BI 6 result:** [BI 6.1.3.10 x64 now opens and records under Wine 10.0](docs/BI6-64BIT.md) using a native IPHLPAPI workaround. Completed recordings from all ten low-resolution cameras decoded successfully, but BI 6 then disappeared when a live camera was double-clicked to enlarge it. A retry with revised memory thresholds stayed open when a camera was enlarged, and all ten cameras kept recording. The original termination remains unexplained; sustained reliability remains untested. That page has separate human instructions and a copy-paste AI prompt.
 
 A practical record of getting **Blue Iris 5.9.9.98, 32-bit**, running on **Zorin OS 18.1 with Wine 10.0**, inside a Proxmox VM.
 
