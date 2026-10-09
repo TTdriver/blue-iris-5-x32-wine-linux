@@ -6,7 +6,7 @@ This is the newer 64-bit experiment. Use it if you want to reproduce BI 6 startu
 
 ## What worked
 
-On October 9, 2026, Blue Iris **6.1.3.10 x64** opened on Zorin OS 18.1 with the host **Wine 10.0**. One camera produced a growing local BVR recording; a completed clip decoded to 100 H.264 frames at 640×360 with changing image content. The ten-camera test is pending verification.
+On October 9, 2026, Blue Iris **6.1.3.10 x64** opened on Zorin OS 18.1 with the host **Wine 10.0**. All ten cameras produced local BVR recordings. Completed clips from the current ten-camera launch each decoded to 100 H.264 frames at 640×360 or 640×480, with ten distinct sampled frames per camera. BI 6 used approximately 1 GB resident memory during this short test. The duplicate BI 5 recorder was then stopped, with its separate prefix and launcher preserved as a fallback.
 
 The startup workaround was an app-local native Windows **iphlpapi.dll**, used alongside the complete native Microsoft **14.51.36247 x64 VC/MFC runtime**. Earlier camera-free Bottles/Soda/Caffe, Proton/UMU, and Lutris Wine-GE tests exited before opening the UI. We have not repeated those runner tests with this DLL workaround.
 
@@ -52,7 +52,7 @@ and report exact versions, observed results and anything still untested.
 
 ## Limits of the result
 
-The workaround enabled startup and the first recording; the exact failing IPHLPAPI export or behavior has not been identified. Thread-context and exception probes passed both native Windows and Wine, so the handled single-step exception alone did not explain the failure. No diagnostic shim is required by the working launch command.
+The workaround enabled startup and ten-camera recording; the exact failing IPHLPAPI export or behavior has not been identified. Thread-context and exception probes passed both native Windows and Wine, so the handled single-step exception alone did not explain the failure. No diagnostic shim is required by the working launch command.
 
 The tested native IPHLPAPI file was AMD64, 220,528 bytes, SHA-256
 `8521026d021cc5193a7cd7c0256bd14c7ab39738d22c019e6d544b37deee12c0`.
