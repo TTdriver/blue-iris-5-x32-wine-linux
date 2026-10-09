@@ -1,0 +1,27 @@
+# Live camera configuration, credentials, Wine prefixes, and media stay local.
+private/
+*.reg
+*.log
+*.bvr
+*.mp4
+*.avi
+*.exe
+*.dll
+*.deb
+*.whl
+*.dat
+system.reg*
+user.reg*
+userdef.reg*
+streams.local.json
+.env
+.env.*
+!.env.example
+wine-prefix*/
+blueiris-prefix*/
+registry-backups/
+recordings/
+.venv/
+__pycache__/
+*.pyc
+dist/
