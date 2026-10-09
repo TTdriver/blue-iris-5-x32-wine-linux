@@ -1,5 +1,7 @@
 # Blue Iris on Linux with Wine
 
+**New BI 6 result:** [BI 6.1.3.10 x64 now opens and records under Wine 10.0](docs/BI6-64BIT.md) using a native IPHLPAPI workaround. One camera is verified; the ten-camera test is pending. That page has separate human instructions and a copy-paste AI prompt.
+
 A practical record of getting **Blue Iris 5.9.9.98, 32-bit**, running on **Zorin OS 18.1 with Wine 10.0**, inside a Proxmox VM.
 
 Ten Reolink cameras produced local recordings using their low-resolution RTSP substreams. Recorded video was decoded for every camera, and automatic deletion of old clips was observed. The final configuration survived a short, roughly six-minute functional test. This is an experimental Wine setup, not proof of overnight reliability or full-resolution recording.
