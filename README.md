@@ -57,8 +57,5 @@ bash -n scripts/launch-blue-iris.sh scripts/prepare-prefix.sh
 
 The reusable scripts were extracted and generalized after the successful live session. Synthetic tests cover the registry transformations and filtering; a fresh installation using the whole repository has not yet been repeated from scratch.
 
-## Help improve this
-
-If you reproduce the setup, open an issue with your Linux/Wine/Blue Iris versions, camera model, measured stream dimensions, and a redacted description of the result. Useful next tests include overnight recording, restart behavior, a legitimate full-resolution setup, and newer Blue Iris versions. Keep camera exports, credentials, private footage, and detailed network configuration out of issues.
 
 Independent community documentation; not affiliated with Blue Iris or Wine. The repository's original code and documentation use the [MIT license](LICENSE). Blue Iris and bundled third-party components retain their own licenses.
