@@ -1,4 +1,4 @@
-# Blue Iris 5 on Linux with Wine
+# Blue Iris 5 x32 on Linux with Wine
 
 This project shares the installation approach that got **Blue Iris 5 32-bit** opening on my Linux desktop. It is a personal experiment, provided as-is. Try it at your own risk; there is no support or reliability guarantee.
 
@@ -13,7 +13,6 @@ The scope is **installing and launching Blue Iris**. Once the application opens,
 | [Tested installation](docs/TESTED-SETUP.md) | Check the versions and dependencies used in the working installation. |
 | [Startup troubleshooting](docs/TROUBLESHOOTING.md) | Resolve prefix, dependency and launch problems. |
 | [Optional scripts](scripts/README.md) | Create the Wine prefix and launch the installed application. |
-| [Reddit post](docs/REDDIT-POST.md) | A short introduction for sharing this project. |
 
 Blue Iris is Windows software. This is an unofficial Wine installation guide, with no vendor affiliation. Installers, Microsoft DLLs and license keys are not included. Obtain your own legitimate copies and handle any normal evaluation dialog.
 

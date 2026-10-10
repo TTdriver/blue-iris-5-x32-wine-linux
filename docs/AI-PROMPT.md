@@ -4,7 +4,7 @@ Use this section when you want an AI assistant to help install BI 5. Copy the bl
 
 ```text
 Help me install and launch Blue Iris 5 32-bit on my Linux desktop using this project:
-https://github.com/TTdriver/blue-iris-wine-linux
+https://github.com/TTdriver/blue-iris-5-x32-wine-linux
 
 Read README.md, docs/HUMAN-GUIDE.md, docs/TESTED-SETUP.md,
 docs/TROUBLESHOOTING.md and scripts/README.md before making changes.
