@@ -1,39 +1,32 @@
-# Copy-paste prompt for your AI assistant
+# Copy/paste installation prompt for an AI
 
-Use this if you want an AI assistant to help install BI 5 on your machine. It is a task brief, not a command to paste into a terminal. Your assistant needs terminal access or must guide you through the steps. Fill in your own details privately.
+Use this section when you want an AI assistant to help install BI 5. Copy the block below into your own assistant. It should inspect your computer and use your own legitimate files. The human guide is available separately for manual installation.
 
 ```text
-Help me get Blue Iris 5 running under Wine using this personal setup guide:
+Help me install and launch Blue Iris 5 32-bit on my Linux desktop using this project:
 https://github.com/TTdriver/blue-iris-wine-linux
-Read README.md, docs/HUMAN-GUIDE.md, docs/TESTED-SETUP.md and scripts/README.md.
 
-My Linux version: [fill in]
-My RAM and free disk space: [fill in]
-My Wine version and existing prefixes: [fill in]
-My legitimate BI installer/update files: [private local paths]
-My camera model and chosen RTSP stream: [fill in privately]
+Read README.md, docs/HUMAN-GUIDE.md, docs/TESTED-SETUP.md,
+docs/TROUBLESHOOTING.md and scripts/README.md before making changes.
 
-The reference is Zorin OS 18.1, Wine 10.0 and BI 5.9.9.98 in a win32 prefix.
-Use a separate prefix and preserve my existing setup. Follow the documented
-legacy route: legitimate BI 4.8.6.3 installation, extracted BI 5 32-bit update,
-and the four listed dependencies from the BI 4 folder. Do not substitute
-random DLL downloads or bypass evaluation/licensing.
+This is installation only. The finish line is the main Blue Iris window opening.
+Stop there; further application configuration is my responsibility.
+Do not import settings or change my existing applications or infrastructure.
 
-Get BI to open, then configure ONE camera using a measured low-resolution
-stream. Confirm network access and authentication. Correct cached dimensions
-xres/yres, fullxres/fullyres and zrect values to that stream's actual size;
-changing the RTSP path alone may leave large startup allocations. Start with
-hardware acceleration off. Extra RAM does not remove the 32-bit address limit.
-Back up settings and stop the relevant prefix before offline registry edits.
-Read optional helpers, use their dry runs and keep credentials/backups private.
+Inspect my Linux distribution, Wine version, graphical session and existing
+Wine prefixes. Explain any necessary package installation. Create a separate
+win32 prefix, normally ~/.local/share/blueiris-wine; do not overwrite another prefix.
+Use my actual installer paths and obtain vendor packages legitimately.
+Never obtain DLLs from arbitrary download sites or bypass licensing.
 
-Use local test storage. Verify live video, a growing clip, and playback or
-successful decoding of a completed clip. Do not change my production recorder,
-NAS, firewall or camera settings without instructions. Ask only for missing
-information required to do this setup; do not ask me for project feedback.
+Follow the version-specific installation route and dependencies in the guide.
+Distinguish the known working versions from untested substitutions. Do not
+claim that the generalized fresh-install recipe has been fully reproduced.
+Check architecture and dependency files before launching. Use the repository's
+launcher and inspect its local log if startup fails.
 
-Finish with the working launch command, private prefix/log locations and
-basic verification result. Stop there. Further configuration and operation
-are my responsibility. This project is used at my own risk and is not a
-support or production-reliability guarantee.
+Ask me only for missing installation information or an action you cannot perform,
+such as obtaining a legitimate package or dismissing the normal Demo dialog.
+Keep license keys and proprietary binaries private. Summarize what was installed,
+where the prefix lives, and the command I can use to launch BI again.
 ```

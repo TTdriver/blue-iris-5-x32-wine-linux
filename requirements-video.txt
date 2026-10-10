@@ -1,2 +1,0 @@
-# Optional: recording decode verification only. Tested locally with this version.
-av==19.0.1
