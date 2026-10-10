@@ -25,3 +25,7 @@ recordings/
 __pycache__/
 *.pyc
 dist/
+
+# Local Wine/vendor files
+*.dll
+*.exe

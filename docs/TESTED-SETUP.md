@@ -1,6 +1,5 @@
 # What was tested and how the working setup was reached
 
-**BI 6 x64 update:** The [BI 6 experiment](BI6-64BIT.md) has its own human instructions, copy-paste AI prompt, native IPHLPAPI workaround, ten-camera recording results, and current UI stability caveat. The material below documents the earlier BI 5 32-bit setup.
 
 **Use this section to assess the evidence and reproduce the installation history.** It is a lab record, not a claim that every attempted step was necessary.
 

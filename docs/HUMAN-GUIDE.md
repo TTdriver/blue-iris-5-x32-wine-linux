@@ -1,8 +1,9 @@
 # Human setup guide
 
-**BI 6 x64 update:** The [BI 6 experiment](BI6-64BIT.md) has its own human instructions, copy-paste AI prompt, native IPHLPAPI workaround, ten-camera recording results, and current UI stability caveat. The material below documents the earlier BI 5 32-bit setup.
 
 **Use this section if you are doing the work yourself.** It explains the steps and why they matter. If you want an AI assistant to do the work, use [AI-PROMPT.md](AI-PROMPT.md) instead.
+
+This guide gets you through installation and a basic recording check. Stop after one camera records and plays back successfully; further configuration is up to you. Try this personal setup at your own risk, with no support or reliability guarantee.
 
 This guide reconstructs a working legacy setup. Installation was achieved through several experiments, so the exact route below has not yet been repeated as a clean-room installation. Read [TESTED-SETUP.md](TESTED-SETUP.md) before choosing this over a supported Windows installation.
 
@@ -141,7 +142,7 @@ Use `C:\BlueIris\New`, `Stored`, `Alerts`, `Clipboard`, and `db` for the local t
 
 Configured caps: New 256 MiB, Stored 1024 MiB, Alerts 512 MiB, Clipboard 256 MiB, totaling 2048 MiB. The helper selects deletion rather than movement for the four managed folders. Retention can remove old files: back up any clips you want to keep before using this test configuration.
 
-Success means all of these happen:
+The basic setup check is complete when the camera displays live video, a recording grows, and a completed clip plays back. The additional rotation/retention checks below are optional:
 
 1. The camera displays a live image.
 2. A recording file grows.
@@ -160,7 +161,7 @@ python3 -m venv .venv
 
 This is a best-effort raw H.264/H.265 decode check that worked with the tested BVR files, not a general BVR parser. If it fails, use Blue Iris playback or its normal export feature before concluding the recording is corrupt.
 
-## 8. Expand gradually and observe resource use
+## Optional: expand gradually and observe resource use
 
 After one camera passes, test small groups—such as three, six, then ten. Before enabling any camera, save its measured dimensions, even if it was previously disabled. Close the application and verify that Wine has stopped before editing its registry offline.
 
