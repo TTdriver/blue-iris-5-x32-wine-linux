@@ -17,3 +17,9 @@ The scope is **installing and launching Blue Iris**. Once the application opens,
 Blue Iris is Windows software. This is an unofficial Wine installation guide, with no vendor affiliation. Installers, Microsoft DLLs and license keys are not included. Obtain your own legitimate copies and handle any normal evaluation dialog.
 
 For Blue Iris 6 x64, use the [separate repository](https://github.com/TTdriver/blue-iris-6-wine-linux).
+
+## Give Thanks
+
+If you’d like to say thanks by buying me a drink or helping cover AI tokens, it’s appreciated.
+
+[Give Thanks](https://thanks.kerchnerlabs.com)
